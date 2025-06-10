@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="Get your github link just from userlink"
+    />
+    <title>Github URL Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <hgroup>
+        <h1>Github URL Generator</h1>
+        <p>Get your github link just from userlink</p>
+      </hgroup>
+    </header>
+    <main class="container">
+      <fieldset role="group" >
+        <input type ="text" id="github" placeholder="Enter your Github username"/>
+        <input type="button" id="generateURL" value="Generate URL"/>
+      </fieldset>
+      <div id="app"></div>
+    </main>
+    <footer class="container neog-footer">
+      <small>
+        go from zero to hero at full stack development with
+        <a href="https://neog.camp">neog.camp</a>
+      </small>
+    </footer>
+    <!-- <script>
+      // TASK 1
+      // const username = "Kethsaxena";
+      // function greetUser() {
+      //   console.log("Hello " + username);
+      // }
+
+      // greetUser();
+
+      //console.log(greetUser(username));
+
+      // TASK 2
+
+      // greetUser();
+
+      // //console.log(greetUser(username));
+
+      // function greetPerson(username) {
+      //   console.log("Hello " + username + "! Welcome to our website!");
+      // }
+
+      // // greetPerson("Ajay");
+      // // greetPerson("Kidambi Srikanth");
+      // // greetPerson("Lakshay Sen");
+
+      // function formattedMessage(message) {
+      //   const resultingMessage = "*" + message + "*";
+      //   return resultingMessage;
+      // }
+
+      // console.log(formattedMessage("Hello World"));
+
+      // const result = formattedMessage("Good Morning");
+      // function combineStrings(string1, string2) {
+      //   const combined = string1 + " " + string2;
+      //   return combined;
+      // }
+      // console.log(combineStrings("Bhima", "Sen"));
+    </script> -->
+    <!-- <script id="ng1.2"> 
+    // TASK 1
+    const username = "Kethsaxena";
+
+    function getGitHubURL(username) {
+      return "https://github.com/"+username;
+    }
+
+    const appElement = document.getElementById("app")
+    appElement.innerText=getGitHubURL(username);
+
+    </script> -->
+    <script id="ng1.3"> 
+    // TASK 1
+    const username = "Kethsaxena";
+
+    function getGitHubURL(username) {
+      return "https://github.com/"+username;
+    }
+
+    function handleGenerateClick(){
+      const githubURL = getGitHubURL(inputElement.value);
+      appElement.innerHTML = githubURL
+    }
+
+    //OBJECTS
+    const inputElement = document.getElementById("github")
+    const buttonElement = document.getElementById("generateURL")   
+    const appElement = document.getElementById("app")
+
+    //appElement.innerText = 
+    buttonElement.addEventListener("click",handleGenerateClick)
+
+    </script>
+  </body>
+</html>
