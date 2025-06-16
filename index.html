@@ -6,107 +6,62 @@
     <meta name="color-scheme" content="light dark" />
     <meta
       name="description"
-      content="Get your github link just from userlink"
+      content="Portfolio of Praketa S, your handy software engineer"
     />
-    <title>Github URL Generator</title>
+    <title>Praketa Saxena | Software Engineer</title>
+     <!-- PicoCSS CDN -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="theme.js" defer></script>
   </head>
   <body>
+    <!-- Navigation -->
+    <nav class="container">
+      <ul>
+        <li><a href="">About</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Skills</a></li>
+        <li><a href="">Connect</a></li>
+      </ul>
+      <ul>
+        <label>
+          <input id ="themeSwitch" role="switch" type="checkbox"></input>
+        </label>
+      </ul>
+    </nav>
+    <!-- Header -->
     <header class="container">
       <hgroup>
-        <h1>Github URL Generator</h1>
-        <p>Get your github link just from userlink</p>
-      </hgroup>
+        <h1>Praketa Saxena</h1>
+        <h2>Software Engineer</h2>
+      </hgroup> 
+      <hr> 
+      <p>Software Engineer with 11 years of professional experience in developing backend APIs, designing and implementing batch data processing workflows, and automating end-to-end application processes.</p>
+      <h3>Technical Skill Areas</h3>
+      <ul>
+        <li>Full Stack: JavaScript | Python</li>
+        <li>Data Engineering: Cloudera Hadoop | SAS</li>
+        <li>Cloud: AWS | GCP </li>
+        <li>Microsoft Stack: dotnet C# MSSQL server SSIS</li>
+      </ul>
+      <!-- <p>|  |  | ] | SAS | Excel - VBA | Autcad Autodesk  & Solidworks</p>   -->
+      <a href="" role="button">Contact Me</a>
+      <a href="" role="button" class="secondary">Resume</a>
     </header>
     <main class="container">
-      <fieldset role="group" >
-        <input type ="text" id="github" placeholder="Enter your Github username"/>
-        <input type="button" id="generateURL" value="Generate URL"/>
-      </fieldset>
       <div id="app"></div>
     </main>
+    <!-- Footer -->
     <footer class="container neog-footer">
       <small>
-        go from zero to hero at full stack development with
-        <a href="https://neog.camp">neog.camp</a>
+        © 2025 Praketa Saxena • Built with HTML | CSS | JS
       </small>
     </footer>
-    <!-- <script>
-      // TASK 1
-      // const username = "Kethsaxena";
-      // function greetUser() {
-      //   console.log("Hello " + username);
-      // }
-
-      // greetUser();
-
-      //console.log(greetUser(username));
-
-      // TASK 2
-
-      // greetUser();
-
-      // //console.log(greetUser(username));
-
-      // function greetPerson(username) {
-      //   console.log("Hello " + username + "! Welcome to our website!");
-      // }
-
-      // // greetPerson("Ajay");
-      // // greetPerson("Kidambi Srikanth");
-      // // greetPerson("Lakshay Sen");
-
-      // function formattedMessage(message) {
-      //   const resultingMessage = "*" + message + "*";
-      //   return resultingMessage;
-      // }
-
-      // console.log(formattedMessage("Hello World"));
-
-      // const result = formattedMessage("Good Morning");
-      // function combineStrings(string1, string2) {
-      //   const combined = string1 + " " + string2;
-      //   return combined;
-      // }
-      // console.log(combineStrings("Bhima", "Sen"));
-    </script> -->
-    <!-- <script id="ng1.2"> 
-    // TASK 1
-    const username = "Kethsaxena";
-
-    function getGitHubURL(username) {
-      return "https://github.com/"+username;
-    }
-
-    const appElement = document.getElementById("app")
-    appElement.innerText=getGitHubURL(username);
-
-    </script> -->
-    <script id="ng1.3"> 
-    // TASK 1
-    const username = "Kethsaxena";
-
-    function getGitHubURL(username) {
-      return "https://github.com/"+username;
-    }
-
-    function handleGenerateClick(){
-      const githubURL = getGitHubURL(inputElement.value);
-      appElement.innerHTML = githubURL
-    }
-
-    //OBJECTS
-    const inputElement = document.getElementById("github")
-    const buttonElement = document.getElementById("generateURL")   
-    const appElement = document.getElementById("app")
-
-    //appElement.innerText = 
-    buttonElement.addEventListener("click",handleGenerateClick)
-
+    <!-- Custom JS Script -->
+    <script id="personalPortFolio"> 
     </script>
   </body>
 </html>
