@@ -17,3 +17,4 @@ th:first-child {
 tr:nth-child(even) th:first-child {
   background-color: #93beff; /* Light blue */
 }
+
